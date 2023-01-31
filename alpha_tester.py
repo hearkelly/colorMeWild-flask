@@ -4,6 +4,14 @@ from letter import Letter
 
 TEST_STRING = "Justin"
 
+"""we want to 
+(1) receive a string, 
+(2) assign each unique character a unique color
+... 
+(3) assign duplicate characters the same color as their predecessor, and
+(4) mix the colors in a stepwise function, each character having a color,
+unique or not
+(5) User should have access to letters activated in their session"""
 # alphabet
 newAlpha = Alphabet()
 assert isinstance(newAlpha, Alphabet)

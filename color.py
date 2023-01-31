@@ -14,3 +14,9 @@ class Color:
 
     def __repr__(self):
         return f"({self.red}, {self.green}, {self.blue})"
+
+    def __eq__(self, other):
+        if isinstance(self, Color) and isinstance(other,Color):
+            return self.rgbTuple == other.rgbTuple
+        else:
+            return False
