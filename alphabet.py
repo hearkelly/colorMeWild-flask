@@ -1,6 +1,8 @@
 import os
 from letter import Letter
 
+# need to implement a color dict for consistent logic
+# write even just a small plan to better design this code
 
 class Alphabet:
     # string id: unique byteID -> stringID using set_id()
@@ -25,6 +27,9 @@ class Alphabet:
                 stringID += "-"
         return stringID
 
+    # needs reworking, flawed logic
+    # no iterations with empty list,
+    # so no letters added
     def add_letter(self, char):
         for lttr in self.usedLetters:
             if ord(char) != lttr.uniLetter:
